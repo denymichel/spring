@@ -18,4 +18,4 @@ public class cargadobd {
             log.info("Preloading " + repository.save(new Consultorio ("5", "primer piso", "ginecologia")));
 
         };
-    } } 
+    } }
