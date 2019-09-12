@@ -12,8 +12,9 @@ class consultorio {
                         private String numero;
                         private String piso;
                         private String especialidad;
-                        Employee() {}
-                        Employee(String numero, String piso, String especialidad)
+
+                        consultorio() {}
+                        consultorio(String numero, String piso, String especialidad)
                       { this.numero = numero;
                       this.piso = piso;
                       this.especialidad = especialidad;}
