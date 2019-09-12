@@ -1,8 +1,7 @@
 package com.consultorio.consultorio;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-interface EmployeeRepository extends JpaRepository<Employee, Long> { }
-public class repositorio_consul {
-
-
+public interface Repositorio_Consul extends JpaRepository<Consultorio, Long> {
 }
+
