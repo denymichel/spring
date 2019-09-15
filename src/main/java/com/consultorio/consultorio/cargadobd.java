@@ -18,4 +18,15 @@ public class cargadobd {
             log.info("Preloading " + repository.save(new Consultorio ("5", "primer piso", "ginecologia")));
 
         };
-    } }
+    }
+        @Bean
+            CommandLineRunner initDatabase(Repositorio_Consul repository) {
+        return args -> {
+            log.info("Preloading " + repository.save(new Consultorio("12", "planta baja", "pediatria")));
+            log.info("Preloading " + repository.save(new Consultorio ("13", "planta baja", "medicina general")));
+            log.info("Preloading " + repository.save(new Consultorio ("5", "primer piso", "urologia")));
+            log.info("Preloading " + repository.save(new Consultorio ("5", "primer piso", "ginecologia")));
+            log.info("Preloading " + repository.save(new Consultorio ("6", "primer piso", "traumatologia")));
+        }
+        }
+}
